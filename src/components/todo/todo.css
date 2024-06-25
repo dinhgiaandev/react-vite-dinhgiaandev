@@ -38,6 +38,7 @@
    padding: 10px 15px;
    color: aliceblue;
    font-weight: 800;
+   cursor: pointer
 }
 
 .button-add:hover {
