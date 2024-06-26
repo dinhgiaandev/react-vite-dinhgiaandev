@@ -30,12 +30,31 @@ import { useState } from 'react'
       <TodoNew         
         addNewTodo={addNewTodo}
       />
-      <TodoData
+
+      {todoList.length > 0 ?
+        <TodoData
+            todoList={todoList}
+        />
+        :
+        <div className='todo-image'>
+            <img src={reactLogo} className='logo'/>
+        </div>
+      }
+
+
+
+      {/* {todoList.length > 0 &&
+        <TodoData
         todoList={todoList}
       />
-      <div className='todo-image'>
-        <img src={reactLogo} className='logo'/>
-      </div>
+      }
+
+      {todoList.length === 0 &&
+          <div className='todo-image'>
+            <img src={reactLogo} className='logo'/>
+          </div>
+      } */}
+
     </div>
   )
 }
