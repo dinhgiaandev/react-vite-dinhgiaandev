@@ -8,19 +8,19 @@ const TodoData = (props) => {
 
   //có thể ghi như này
   const { todoList } = props;
-  console.log(">>> check props: ", todoList);
+  // console.log(">>> check props: ", todoList);
   return (
     <div className="todo-data">
       {todoList.map((item, index) => {
-        console.log(">>> check log:", item, index);
+        console.log(">>> check map:", item, index);
         return (
-          <div className="todo-item">
-            <div>{item.name}</div>
-            <button>Delete</button>
-          </div>
-        );
+            <div className={`todo-item`} key={index.id}>
+              <div> {item.name}</div>
+              <button>Delete</button>
+            </div>
+        )
       })}
-      <div>{JSON.stringify(props.todoList)}</div>
+      {/* <div>{JSON.stringify(props.todoList)}</div> */}
     </div>
   );
 };
