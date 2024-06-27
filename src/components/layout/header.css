@@ -1,4 +1,4 @@
-ul {
+/* ul {
    list-style-type: none;
    margin: 0;
    padding: 0;
@@ -21,4 +21,78 @@ ul {
   .active {
    background-color: #04AA6D;
   }
-  
+  */
+
+/* -start- navigation bar */
+li,a{
+   font-weight: 500;
+   font-size: 16px;
+   font-family: "Montserrat", sans-serif;
+   text-decoration: none;
+   color: #ebdee4;
+   font-weight: bold;
+   cursor: context-menu;
+}
+
+header{
+   height: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 10%;
+   background-color: rgba(32, 36, 36, 0.9);
+   padding-left: 0;
+   /* position: fixed; */
+   top: 0;
+   left: 0;
+   width: 90%;
+   z-index: 1000;
+   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Hiển thị shadow mờ khi cuộn xuống */
+   transition: box-shadow 0.3s ease;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+header:hover {
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Tăng độ mờ khi hover */
+}
+
+.logo, .logo-header {
+   vertical-align: middle; /* Canh giữa dọc */
+}
+
+.logo {
+   width: 100px; 
+   height: 70px;
+   margin-right: 10px;  
+   cursor: pointer;
+}
+
+.logo-header {
+   width: 50px; /* Đặt kích thước width cho gif */
+   height: 50px; /* Đặt kích thước height cho gif */
+   margin-left: 25px;
+   cursor: pointer;
+}
+
+.nav_link{
+   list-style: none;
+}
+
+.nav_link li{
+   display: inline-block;
+   padding: 0px 20px;
+}
+
+.nav_link li a{
+   transition: all 0.3s ease 0s;
+}
+
+.nav_link li a:hover{
+   color: #c28721;
+   border-color: #9d99d9;
+   background-color: #ceced6;
+   padding: 12px;
+   border-radius: 50px;
+}
+/* -end- navigation bar */

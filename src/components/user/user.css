@@ -1,0 +1,16 @@
+.form-input {
+   margin: 10px 30px;
+}
+
+.input-info {
+   width: 15rem;
+   margin-left: 2rem;
+}
+
+.form-child div {
+   margin-bottom: 1rem;
+}
+
+.form-child .place-text {
+   width: 5rem;
+}
